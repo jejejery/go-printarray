@@ -6,16 +6,22 @@ import(
 
 func PrintArray(arr []int){
 	fmt.Print("[")
-	for _, val := range arr{
-		fmt.Printf("%d ", val)
+	for i := 0; i < len(arr); i++{
+		fmt.Printf("%d", arr[i])
+		if i != len(arr)-1{
+			fmt.Print(" ")
+		}
 	}
 	fmt.Print("]")
 }
 
 func PrintStrArray(arr []string){
 	fmt.Print("[")
-	for _, val := range arr{
-		fmt.Printf("%s ", val)
+	for i := 0; i < len(arr); i++{
+		fmt.Printf("%s", arr[i])
+		if i != len(arr)-1{
+			fmt.Print(" ")
+		}
 	}
 	fmt.Print("]")
 }
