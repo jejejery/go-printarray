@@ -4,15 +4,15 @@ import(
 	"fmt"
 )
 
-func printArray(arr []int){
+func PrintArray(arr []int){
 	for _, val := range arr{
 		fmt.Printf("%d ", val)
 	}
 }
 
-func printMatrix(mat [][]int){
+func PrintMatrix(mat [][]int){
 	for _, row := range mat{
-		printArray(row)
+		PrintArray(row)
 		fmt.Println()
 	}
 }
