@@ -32,3 +32,10 @@ func PrintMatrix(mat [][]int){
 		fmt.Println()
 	}
 }
+
+func PrintStrMatrix(mat [][]string){
+	for _, row := range mat{
+		PrintStrArray(row)
+		fmt.Println()
+	}
+}
